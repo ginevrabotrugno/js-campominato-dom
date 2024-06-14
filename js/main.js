@@ -19,9 +19,20 @@ button.addEventListener("click",
 
         let bombArray = [];
 
-        // creo per 16 volte un numero random
-        for (let i = 0; i < 16; i++) {
+        // // creo per 16 volte un numero random
+        // for (let i = 0; i < 16; i++) {
             
+        //     let bomb = generaNumeroRandom(1,100);
+
+        //     if (! bombArray.includes(bomb)) { // nell’array delle bombe non potranno esserci due numeri uguali.
+                
+        //         bombArray.push(bomb);
+
+        //     }
+        // }
+
+        let i = 0;
+        while (bombArray.length === 16) {
             let bomb = generaNumeroRandom(1,100);
 
             if (! bombArray.includes(bomb)) { // nell’array delle bombe non potranno esserci due numeri uguali.
