@@ -49,15 +49,14 @@ button.addEventListener("click",
 
                     if (bombArray.includes(number)) {
                         this.classList.add("bomb");
+                        alert("OH NO! HAI PESTATO UNA BOMBA!! GAME OVER");
 
                     } else {
                         this.classList.add("clicked");
+                        console.log("La cella cliccata è la numero", number);
 
                     }
-
-                    console.log("La cella cliccata è la numero", number);
                 
-
                 }
             )
 
