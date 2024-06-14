@@ -19,20 +19,7 @@ button.addEventListener("click",
 
         let bombArray = [];
 
-        // // creo per 16 volte un numero random
-        // for (let i = 0; i < 16; i++) {
-            
-        //     let bomb = generaNumeroRandom(1,100);
-
-        //     if (! bombArray.includes(bomb)) { // nell’array delle bombe non potranno esserci due numeri uguali.
-                
-        //         bombArray.push(bomb);
-
-        //     }
-        // }
-
-        let i = 0;
-        while (bombArray.length === 16) {
+        while (bombArray.length < 16) {
             let bomb = generaNumeroRandom(1,100);
 
             if (! bombArray.includes(bomb)) { // nell’array delle bombe non potranno esserci due numeri uguali.
@@ -43,6 +30,7 @@ button.addEventListener("click",
         }
 
         console.log(bombArray);
+       
 
 
         // per 100 volte aggiungo l'elemento al contenitore
@@ -58,8 +46,8 @@ button.addEventListener("click",
             box.addEventListener("click",
 
                 function () {
-
-                    this.classList.toggle("clicked");
+                    
+                    this.classList.add("clicked");
 
                     console.log("La cella cliccata è la numero", number);
                 
