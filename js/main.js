@@ -46,8 +46,14 @@ button.addEventListener("click",
             box.addEventListener("click",
 
                 function () {
-                    
-                    this.classList.add("clicked");
+
+                    if (bombArray.includes(number)) {
+                        this.classList.add("bomb");
+
+                    } else {
+                        this.classList.add("clicked");
+
+                    }
 
                     console.log("La cella cliccata è la numero", number);
                 

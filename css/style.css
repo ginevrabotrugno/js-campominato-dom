@@ -48,6 +48,11 @@ header{
     color: darkblue;
 }
 
+.bomb {
+    background-color: red;
+    color: black;
+}
+
 form {
     text-align: center;
     margin-top: 50px;
