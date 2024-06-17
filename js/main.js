@@ -31,6 +31,7 @@ button.addEventListener("click",
 
         console.log(bombArray);
        
+        let score = 0;
 
 
         // per 100 volte aggiungo l'elemento al contenitore
@@ -49,12 +50,11 @@ button.addEventListener("click",
 
                     if (bombArray.includes(number)) {
                         this.classList.add("bomb");
-                        alert("OH NO! HAI PESTATO UNA BOMBA!! GAME OVER");
+                        alert("OH NO! HAI PESTATO UNA BOMBA!! GAME OVER" + "Il tuo punteggio è: " + score);
 
                     } else {
                         this.classList.add("clicked");
-                        console.log("La cella cliccata è la numero", number);
-
+                        score ++;
                     }
                 
                 }
