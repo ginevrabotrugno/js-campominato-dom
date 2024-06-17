@@ -17,17 +17,7 @@ button.addEventListener("click",
 
         // Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe.
 
-        let bombArray = [];
-
-        while (bombArray.length < 16) {
-            let bomb = generaNumeroRandom(1,100);
-
-            if (! bombArray.includes(bomb)) { // nell’array delle bombe non potranno esserci due numeri uguali.
-                
-                bombArray.push(bomb);
-
-            }
-        }
+        let bombArray = generateRandomNumbersArray(1,100,16);
 
         console.log(bombArray);
        
